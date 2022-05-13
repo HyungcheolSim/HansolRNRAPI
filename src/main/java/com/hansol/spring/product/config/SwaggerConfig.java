@@ -18,7 +18,7 @@ public class SwaggerConfig {
     private static final String API_DESCRIPTION = "Swagger 연결 TEST API";
 
     @Bean
-    public Docket api(){
+    public Docket api() {
         return new Docket(DocumentationType.OAS_30)
                 .useDefaultResponseMessages(false)
                 .select()
@@ -28,7 +28,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo());
     }
 
-    private ApiInfo apiInfo(){
+    private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title(API_NAME)
                 .description(API_DESCRIPTION)

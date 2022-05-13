@@ -2,29 +2,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hansol.spring.product.dao.TestDAO">
     <select id="selectTestData" resultType="com.hansol.spring.product.dto.TestDTO">
-        select
-            title,name
-        from
-            DB_TEST
+        select title,
+               name
+        from DB_TEST
     </select>
     <insert id="insertTestData" parameterType="com.hansol.spring.product.dto.TestDTO">
-        insert into
-            DB_TEST
-        values
-            (#{title},#{name})
+        insert into DB_TEST
+        values (#{title}, #{name})
     </insert>
     <select id="selectTestDataByTitle" parameterType="String" resultType="com.hansol.spring.product.dto.TestDTO">
-        select * from DB_TEST where title=#{title}
+        select *
+        from DB_TEST
+        where title = #{title}
     </select>
     <update id="updateTestData" parameterType="com.hansol.spring.product.dto.TestDTO">
         update
             DB_TEST
-        set
-            name=#{name}
-        where
-            title=#{title}
+        set name=#{name}
+        where title = #{title}
     </update>
     <delete id="deleteTestData" parameterType="String">
-        delete from DB_TEST where title=#{title}
+        delete
+        from DB_TEST
+        where title = #{title}
     </delete>
+
+    <insert id="insertTest" parameterType="com.hansol.spring.product.dto.TestDTO">
+        insert into DB_TEST
+        values (#{title}, #{name})
+    </insert>
 </mapper>
