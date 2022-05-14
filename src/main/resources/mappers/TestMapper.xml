@@ -27,8 +27,8 @@
         where title = #{title}
     </delete>
 
-    <insert id="insertTest" parameterType="com.hansol.spring.product.dto.TestDTO">
+<!--    <insert id="insertTest" parameterType="com.hansol.spring.product.dto.TestDTO">
         insert into DB_TEST
         values (#{title}, #{name})
-    </insert>
+    </insert>-->
 </mapper>

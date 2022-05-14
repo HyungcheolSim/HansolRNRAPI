@@ -38,7 +38,7 @@ public class TestServiceImpl implements TestService {
     //Test 생성 (TestDTO 객체의 리턴타입이 있는 경우)
     @Override
     public TestDTO insertTestDTO(TestDTO testDTO) {
-        testDAO.insertTest(testDTO);
+        testDAO.insertTestData(testDTO);
         return testDTO;
     }
 

@@ -17,5 +17,5 @@ public interface TestDAO {
 
     void deleteTestData(String title);
 
-    TestDTO insertTest(TestDTO testDTO);
+    //TestDTO insertTest(TestDTO testDTO);
 }

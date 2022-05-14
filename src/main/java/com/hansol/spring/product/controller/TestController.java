@@ -26,15 +26,17 @@ public class TestController {
     //test 목록 조회
     @GetMapping("/test")
     public ResponseEntity printTest() {
-        return new ResponseEntity(BaseResp.res(StatusCode.OK, ResponseMessage.READ_TEST, testService.getTestList()), HttpStatus.OK);
+        return new ResponseEntity(
+                BaseResp.res(StatusCode.OK, ResponseMessage.READ_TEST, testService.getTestList()), HttpStatus.OK);
     }
-    
+
     //test 생성
     @PostMapping("/test")
     public ResponseEntity insertTest(@RequestBody TestDTO testDTO) {
-        return new ResponseEntity(BaseResp.res(StatusCode.OK, ResponseMessage.CREATED_TEST, testService.insertTestDTO(testDTO)), HttpStatus.OK);
+        return new ResponseEntity(
+                BaseResp.res(StatusCode.OK, ResponseMessage.CREATED_TEST, testService.insertTestDTO(testDTO)), HttpStatus.OK);
     }
-    
+
     //특정 테스트 조회
     @GetMapping("/test/{title}")
     public ResponseEntity getTestByTitle(@PathVariable String title) {
