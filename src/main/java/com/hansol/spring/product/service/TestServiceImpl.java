@@ -64,7 +64,8 @@ public class TestServiceImpl implements TestService {
         testDAO.deleteTestData(title);
     }
 
-    //특정 title의 Test를 삭제하는 메소드(삭제한 후 삭제한 Test를 리턴)
+    //**수정
+    //특정 title의 Test를 삭제하는 메소드(삭제할 Test를 객체에 저장한 후 삭제하고 저장한 객체 리턴)
    @Override
     public TestDTO deleteTestDTO(String title) {
         TestDTO existTest = testDAO.selectTestDataByTitle(title);
