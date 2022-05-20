@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hansol.spring.product.dao.TaskDAO">
+    <select id="selectTaskData" resultType="com.hansol.spring.product.dto.TaskDTO">
+        select t_id, t_name
+        from task
+    </select>
+    <insert id="insertTaskData" parameterType="com.hansol.spring.product.dto.TaskDTO">
+        insert into task
+        values(#{t_id},#{t_name})
+    </insert>
+    <select id="selectTaskDataById" parameterType="String" resultType="com.hansol.spring.product.dto.TaskDTO">
+        select t_id,t_name
+        from task
+        where t_id = #{t_id}
+    </select>
+    <update id="updateTaskData" parameterType="com.hansol.spring.product.dto.TaskDTO">
+        update
+            task
+        set t_id=#{t_id},t_name=#{t_name}
+        where t_id = #{t_id}
+    </update>
+    <delete id="deleteTaskData" parameterType="String">
+        delete
+        from task
+        where t_id = #{t_id}
+    </delete>
+
+
+</mapper>

@@ -37,13 +37,13 @@ public class EmployeeController {
     }
 
     @PutMapping("/emp")
-    public ResponseEntity updateTest(@RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity updateEmployee(@RequestBody EmployeeDTO employeeDTO) {
         return new ResponseEntity(BaseResp.res(StatusCode.OK, ResponseMessage.UPDATE_EMPLOYEE, employeeService.updateEmployeeDTO(employeeDTO)), HttpStatus.OK);
     }
 
     //test 삭제
     @DeleteMapping("/emp/{e_id}")
-    public ResponseEntity deleteTest(@PathVariable int e_id) {
+    public ResponseEntity deleteEmployee(@PathVariable int e_id) {
         employeeService.deleteEmployeeDTO(e_id);
         return new ResponseEntity(BaseResp.res(StatusCode.OK, ResponseMessage.DELETE_EMPLOYEE), HttpStatus.OK);
     }
