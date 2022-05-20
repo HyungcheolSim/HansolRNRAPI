@@ -7,7 +7,7 @@ import nonapi.io.github.classgraph.json.Id;
 
 @Data
 public class EmployeeDTO {
-    @Id
+    @NotNull
     int e_id;
     @NotNull
     String e_name;

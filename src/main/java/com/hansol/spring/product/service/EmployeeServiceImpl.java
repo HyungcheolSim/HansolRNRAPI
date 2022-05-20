@@ -13,7 +13,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeDAO employeeDAO;
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeDAO employeeDAO){ this.employeeDAO=employeeDAO;}
+    public EmployeeServiceImpl(EmployeeDAO employeeDAO) {
+        this.employeeDAO = employeeDAO;
+    }
 
 
     @Override
@@ -39,6 +41,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         existEmp.setE_company(employeeDTO.getE_company());
         existEmp.setE_rank(employeeDTO.getE_rank());
         existEmp.setE_phone(employeeDTO.getE_phone());
+        employeeDAO.updateEmployeeData(existEmp);
         return existEmp;
     }
 

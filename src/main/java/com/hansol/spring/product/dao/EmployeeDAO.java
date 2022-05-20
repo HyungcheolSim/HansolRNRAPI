@@ -12,7 +12,7 @@ public interface EmployeeDAO {
 
     void insertEmployeeData(EmployeeDTO employeeDTO);
 
-    EmployeeDTO updateEmployeeData(EmployeeDTO employeeDTO);
+    void updateEmployeeData(EmployeeDTO employeeDTO);
 
     void deleteEmployeeData(int e_id);
 
