@@ -13,9 +13,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    private static final String API_NAME = "HC Test API";
-    private static final String API_VERSION = "0.0.1";
-    private static final String API_DESCRIPTION = "Swagger 연결 TEST API";
+    private static final String API_NAME = "HC Hansol RNR API";
+    private static final String API_VERSION = "0.0.2";
+    private static final String API_DESCRIPTION = "한솔 데이터를 기반으로 업무분장을 나타내기 위한 API";
 
     @Bean
     public Docket api() {
