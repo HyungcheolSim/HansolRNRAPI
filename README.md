@@ -12,8 +12,13 @@
 https://boundless-pudding-4e9.notion.site/EDUCATION-afc5c52009124381b4879c129296690b
 
 IDE : IntelliJ
+
 Language : Java
+
 Framework: SpringBoot
+
 Persistence Framework: Mybatis
+
 API Doc: Swagger
+
 DBMS: Mysql
