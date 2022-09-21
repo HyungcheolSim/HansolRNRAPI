@@ -6,8 +6,14 @@
 
 **링크:** [https://comento.kr/edu/learn/ITSW/웹개발-G1817?closed](https://comento.kr/edu/learn/ITSW/%EC%9B%B9%EA%B0%9C%EB%B0%9C-G1817?closed)
 
-한솔의 RNR 정보를 바탕으로 만든 CRUD API
-
+##한솔의 RNR 정보를 바탕으로 만든 CRUD API
 
 개발과정
 https://boundless-pudding-4e9.notion.site/EDUCATION-afc5c52009124381b4879c129296690b
+
+IDE : IntelliJ
+Language : Java
+Framework: SpringBoot
+Persistence Framework: Mybatis
+API Doc: Swagger
+D
