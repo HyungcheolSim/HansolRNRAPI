@@ -9,7 +9,7 @@
 ##한솔의 RNR 정보를 바탕으로 만든 CRUD API
 
 개발과정
-https://boundless-pudding-4e9.notion.site/EDUCATION-afc5c52009124381b4879c129296690b
+https://boundless-pudding-4e9.notion.site/Commento-afc5c52009124381b4879c129296690b
 
 IDE : IntelliJ
 
